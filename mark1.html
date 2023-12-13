@@ -1,0 +1,268 @@
+<?php
+include'connn.php';
+if(isset($_POST['submited'])){
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $msge=$_POST['msge'];
+    $query="INSERT INTO marks (name,email,msge) VALUES ('$name','$email','$msge')";
+    $data=mysqli_query($connn,$query);
+    if($data){
+        echo "<script>alert('data insert successfully');</script>";
+    
+    }else{
+        echo "<script>alert('unable to insert the data');</script>";
+      
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Discover the most up-to-date Pakistan mobile prices with our comprehensive guide. Stay informed about the latest smartphones, their specifications, and competitive pricing. Whether you're searching for budget-friendly options or flagship devices, our platform allows you to compare prices from various vendors to make informed decisions.">
+    <title>iphone Price index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="product-landing-styles.css">
+</head>
+<style>
+    .header-section {
+        padding: 100px 0;
+        background: url('kk1.webp') no-repeat center center;
+        background-size: cover;
+        color: white;
+    }
+
+    .navbar {
+        background-color: rgba(156, 128, 128, 0.8);
+    }
+
+    /* Ensures that the navbar text is not transparent */
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+
+    #pricing {
+        background-color: rgb(190, 186, 186);
+
+    }
+
+    video {
+        width: 400px;
+        height: 300px;
+    }
+
+    .column1 {
+        border: 1px  black;
+        width: 400px;
+        height: 300px;
+        position: relative;
+    }
+
+    .column2 {
+        border: 1px  black;
+        width: 400px;
+        height: 300px;
+        margin-left: 700px;
+        position: relative;
+        margin-top: 20px;
+    }
+    #hf{
+        margin:auto;
+    }
+    .parent{
+        width: 600px;
+        height: 450px;
+        border: transparent;
+        margin:auto;
+    }
+    .cc{
+width:800px;
+border-radius: 20px;
+height:500px;
+    }
+    #txt{
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pakistan mobile prices</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="header-section">
+        <div class="container text-center">
+            <h1>Pakistan mobile prices</h1>
+            <img src="" alt="">
+            <p>Discover the world's best product here.</p>
+            
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Feature 1 -->
+                <div class="col-md-6">
+                    <h3>Iphones</h3>
+
+                    <p>Over 1 billion iPhones are in active use making it one of the world's most popular devices — with
+                        a fascinating history. The App Store features over a million apps, helping you unlock your
+                        iPhone using your face, charge without cables, have Siri turn on the lights in your home, and so
+                        much more. Apple's most advanced iPhone range has been here for over a month now, bringing in
+                        the iPhone 15, iPhone 15 Pro, and iPhone 15 Pro Max. </p>
+                    <br>
+                    <a href="get.html" class="btn btn-primary mt-3">Iphones features</a>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-md-6" >
+                    <video width="600" controls>
+                        <source src="videos1.webm" type="video/mp4">
+                        <source src="videos1.webm" type="video/ogg">
+
+                    </video>
+
+                </div>
+                <!-- Feature 3 --> 
+               
+            </div>
+        </div>
+    </section>
+    <section>
+
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <!-- Pricing Plan 1 -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-header bg-info">
+                                <h3 class="my-0 font-weight-normal">Free</h3>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title pricing-card-title">$0
+                                    <small class="text-muted">/ mo</small>
+                                </h4>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>10 users included</li>
+                                    <li>2 GB of storage</li>
+                                    <!-- More features -->
+                                </ul>
+                                <!-- <input type="submit" value="Signup" class="btn btn-primary"> -->
+                                <!-- <button class="btn btn-primary"><a href="#contact"></a>signup</button> -->
+                                <a href="#contact" class="btn btn-primary ">Signup</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- More pricing plans -->
+            </div>
+
+
+        </section>
+        <section>
+            <div class="row1">
+                <br>
+                <h1>"A satisfied customer is the best business strategy of all." — Michael LeBoeuf.</h1>
+                <br><br>
+
+                <!-- <div class="column1">
+
+                    <video width="600" controls>
+                        <source src="videos1.webm" type="video/mp4">
+                        <source src="videos1.webm" type="video/ogg">
+
+                    </video>
+
+                </div> -->
+                <br><br>
+                <h2> “Take a risk and keep testing, because
+                    what works today won't work tomorrow, but what worked
+                    yesterday may work again.”</h2>
+                <div class="column2" id="hf">
+                    <video  width="600" controls>
+                        <source src="video2.webm"  type="video/mp4">
+                        <!-- <source src="videos2.webm" type="video/ogg"> -->
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </section>
+<br><br>
+    <!-- Contact Section -->
+   <div class="container cc">
+    <section id="contact" class="py-5" style="background-color:rgb(217, 230, 235);">
+        <div class="parent">
+            <div class="col-10"><br>
+            <h2 id="txt">Contact Us</h2><br>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="nameInput">Name</label>
+                    <input type="text" class="form-control" id="nameInput" name="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Email address</label>
+                    
+                    <input type="email" class="form-control" id="emailInput"  name="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="messageTextarea">Message</label>
+                    <textarea class="form-control" id="messageTextarea" name="msge" rows="3"></textarea>
+                </div>
+                <br>
+                <input type="submit" name="submited" class="btn btn-primary">
+            </form>
+        </div>
+        </div>
+        
+    </section>
+    </div>
+<br><br><br><br>
+    <!-- Footer -->
+    <footer class="text-muted py-2" style="background-color: black; height:100px">
+        <div class="container">
+            <p class="float-right">
+                <a href="#" class="btn btn-light mt-3">Back to top</a>
+            </p>
+            <p style="color: aliceblue;">Awesome Product &copy; 2023</p>
+          
+            <p style="color: aliceblue;">pakistan digital products &copy; 2023</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
