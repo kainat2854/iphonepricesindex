@@ -1,20 +1,3 @@
-<?php
-include'connn.php';
-if(isset($_POST['submited'])){
-    $name=$_POST['name'];
-    $email=$_POST['email'];
-    $msge=$_POST['msge'];
-    $query="INSERT INTO marks (name,email,msge) VALUES ('$name','$email','$msge')";
-    $data=mysqli_query($connn,$query);
-    if($data){
-        echo "<script>alert('data insert successfully');</script>";
-    
-    }else{
-        echo "<script>alert('unable to insert the data');</script>";
-      
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
